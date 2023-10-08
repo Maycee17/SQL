@@ -64,7 +64,7 @@ FROM fortune_companies
 GROUP BY paid_time_off_days
 HAVING paid_time_off_days>=10;
 
-# Create a revenue list for the companies with revenue going from largest to smallest
+# Create a revenue list for the companies in order from largest to smallest revenue
 SELECT company_name, SUM(revenue)
 FROM fortune_companies
 GROUP BY revenue
